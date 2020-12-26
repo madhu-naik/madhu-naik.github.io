@@ -13,19 +13,18 @@
 <body>
 
 	
-<nav id="top-menu-nav">
-<ul id="top-menu" class="nav"><li id="menu-item-674" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-364 current_page_item menu-item-674"><a href="https://ruwando.com/" aria-current="page">Home</a></li>
-<li id="menu-item-562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-562"><a href="https://ruwando.com/podcast/">Podcast</a></li>
-<li id="menu-item-608" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-608"><a href="https://ruwando.com/writing-4/">Writing</a></li>
-<li id="menu-item-412" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-412"><a href="#">Courses</a>
-<ul class="sub-menu">
-	<li id="menu-item-681" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-681"><a href="https://ruwando.com/arousal-control-secrets/">Arousal Control Secrets</a></li>
-	<li id="menu-item-1229" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1229"><a href="https://ruwando.com/archetype13/">Masculine Archetype Challenge</a></li>
-</ul>
-</li>
-<li id="menu-item-673" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-673"><a href="https://ruwando.com/coaching/">Coaching</a></li>
-<li id="menu-item-2132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2132"><a href="https://ruwando.com/contact/">Contact</a></li>
-</ul>						</nav> 
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>					</nav> 
 	
 <div class="video-background">
     <div class="video-foreground">
@@ -52,6 +51,17 @@ function myFunction() {
   } else {
     video.pause();
     btn.innerHTML = "Play";
+  }
+}
+</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
 }
 </script>
