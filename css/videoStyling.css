@@ -39,6 +39,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
 }
 
 ul {
@@ -50,7 +52,7 @@ ul {
 }
 
 li {
-  float: left;
+  float: right;
 }
 
 li a {
